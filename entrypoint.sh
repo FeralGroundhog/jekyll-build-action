@@ -3,6 +3,17 @@
 set -x # verbose mode
 set -e # stop executing after error
 
+####################################################
+# Install jekyll dependencies 
+####################################################
+echo "Gathering dependencies"
+bundle install
+echo "Bundle install completed"
+
+####################################################
+# Start build process 
+####################################################
+
 echo "Starting Jekyll build"
 
 ####################################################
